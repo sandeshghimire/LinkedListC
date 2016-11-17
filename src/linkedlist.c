@@ -2,6 +2,7 @@
 
 int init_linkedlist(struct linkedlist **head)
 {
+    *head = NULL;
     return 0;
 }
 int length(struct linkedlist **head)
