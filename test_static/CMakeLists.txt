@@ -1,1 +1,1 @@
-add_executable(linkedlist main.c)
+add_executable(linkedlist_static_test main.c)

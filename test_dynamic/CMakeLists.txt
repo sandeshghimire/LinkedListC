@@ -1,1 +1,1 @@
-add_executable(linkedlist main.c)
+add_executable(linkedlist_dynamic_test main.c)
