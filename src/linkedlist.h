@@ -5,12 +5,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+enum 
+{
+    LL_SUCCESS, 
+    LL_FAILED
+};
+
+
 struct linkedlist
 {
     int data;
     struct linkedlist * next;
     struct linkedlist * prev;
 }linkedlist;
+
+
+
 
 
 int init_linkedlist(struct linkedlist ** head);
