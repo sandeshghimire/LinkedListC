@@ -19,10 +19,6 @@ struct linkedlist
     struct linkedlist * prev;
 }linkedlist;
 
-
-
-
-
 int init_linkedlist(struct linkedlist ** head);
 int length(struct linkedlist ** head);
 int print(struct linkedlist ** head);

@@ -20,7 +20,19 @@ int main(int argc, char **argv)
         switch (input)
         {
         case 'A':
+        {
+            int data;
+            int index;
+            printf("Input data ");
+            scanf("%d", &data);
+            
+            printf("Input index ");
+            scanf("%d", &index);
+            
+            printf("the input values are %d and %d \n", data, index);
+            add_to_list(&head, data, index);
             break;
+        }
         case 'B':
             break;
         case 'C':
@@ -61,6 +73,8 @@ int main(int argc, char **argv)
         case 'R':
             reverse(&head);
             break;
+        case 'x':
+            break;
         default:
             break;
         }
@@ -72,6 +86,7 @@ int main(int argc, char **argv)
 void printMenu()
 {
     printf("+=====================+        \n");
+    printf("A - Add to list                 \n");
     printf("I - Init linkedlist            \n");
     printf("L - Length of  linkedlist      \n");
     printf("P - Print linkedlist           \n");

@@ -48,11 +48,12 @@ int reverse(struct linkedlist **head)
     {
         cur = cur->next;
     }
-  
-    return 0;
+      return 0;
 }
 int sort(struct linkedlist **head)
 {
+
+
     return 0;
 }
 
@@ -75,6 +76,14 @@ int pop(struct linkedlist **head)
 
 int add_to_list(struct linkedlist **head, int item, int index)
 {
+    struct linkedlist * cur = *head;
+    
+    if( index > length(cur) )
+    {
+        printf("Out of index \n");
+        return LL_FAILED;
+    }
+
     return 0;
 }
 int remove_from_list(struct linkedlist **head, int index)
